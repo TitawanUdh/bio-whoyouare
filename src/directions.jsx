@@ -35,9 +35,17 @@ const links = [
 ];
 
 export default function Directions() {
-  const open = (href) =>
-    href && window.open(href, "_blank", "noopener,noreferrer");
+const open = (href) => {
+    if (!href) return;
 
+    // เช็คว่าถ้า link ขึ้นต้นด้วย / ให้เปิดในหน้าเดิม
+    if (href.startsWith('/')) {
+      window.location.href = href; 
+    } else {
+      // ถ้าเป็น external link ให้เปิด tab ใหม่
+      window.open(href, "_blank", "noopener,noreferrer");
+    }
+  };
   return (
     <div className="link-list mt-4">
       

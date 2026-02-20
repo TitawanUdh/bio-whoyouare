@@ -5,11 +5,15 @@ function DetailContact() {
   const navigate = useNavigate();
   return (
     <div className="bg-main">
-        <span className="back-button" onClick={() => navigate("/")} variant="outline">
-            <IoChevronBack size={40} style={{color:'rgb(133, 92, 38)'}}/>
-        </span>
+      <span
+        className="back-button"
+        onClick={() => navigate("/")}
+        variant="outline"
+      >
+        <IoChevronBack size={40} style={{ color: "rgb(133, 92, 38)" }} />
+      </span>
       <div
-        className=" d-flex justify-content-center align-items-center"
+        className="p-3 d-flex justify-content-center align-items-center"
         style={{ minHeight: "100vh" }}
       >
         <Card className="card-contact">
@@ -24,8 +28,11 @@ function DetailContact() {
                 สามารถติดต่อเราได้ที่ช่องทางด้านล่างนี้เลยค่ะ
               </p>
               <p>
-                สามารถเก็บข้อมูลของผู้เล่นได้อย่างปลอดภัย และนำไปใช้ประโยชน์ได้จริง แต่ยังคงให้ความสำคัญกับความเป็นส่วนตัวของผู้เล่นเป็นหลัก (PDPA)
-                เช่น การนำไปใช้ในการทำ CRM หรือการทำ Retargeting Ads ได้อย่างมีประสิทธิภาพ
+                สามารถเก็บข้อมูลของผู้เล่นได้อย่างปลอดภัย
+                และนำไปใช้ประโยชน์ได้จริง
+                แต่ยังคงให้ความสำคัญกับความเป็นส่วนตัวของผู้เล่นเป็นหลัก (PDPA)
+                เช่น การนำไปใช้ในการทำ CRM หรือการทำ Retargeting Ads
+                ได้อย่างมีประสิทธิภาพ
               </p>
               <hr />
               <Button
