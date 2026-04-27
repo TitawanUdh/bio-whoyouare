@@ -28,6 +28,12 @@ const links = [
   },
   {
     num: 5,
+    title: "Dark Triad",
+    link: "https://whoyouare-05.vercel.app/",
+    icon: <SiGoogleearth/>,
+  },
+  {
+    num: 6,
     title: "ติดต่อเราสร้างเกมของตัวเอง",
     link: '/detail-contact',
     icon: <FaHeart/>,
